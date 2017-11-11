@@ -1,0 +1,193 @@
+/*Write by Rachmadbagas 
+css grid styling basic*/
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.baris:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.bagi {
+    position: relative;
+    display: block;
+    float: left;
+    padding: 15px;
+}
+
+.bagi.slice12,
+.bagi.slice11,
+.bagi.slice10,
+.bagi.slice9,
+.bagi.slice8,
+.bagi.slice7,
+.bagi.slice6,
+.bagi.slice5,
+.bagi.slice4,
+.bagi.slice3,
+.bagi.slice2,
+.bagi.slice1 {
+    width: calc((12/12)*100%);
+    max-width: calc((12/12)*100%);
+}
+
+.bagi.slice12.fixed {
+    width: calc((12/12)*100%);
+    max-width: calc((12/12)*100%);
+}
+
+.bagi.slice11.fixed {
+    width: calc((11/12)*100%);
+    max-width: calc((11/12)*100%);
+}
+
+.bagi.slice10.fixed {
+    width: calc((10/12)*100%);
+    max-width: calc((10/12)*100%);
+}
+
+.bagi.slice9.fixed {
+    width: calc((9/12)*100%);
+    max-width: calc((9/12)*100%);
+}
+
+.bagi.slice8.fixed {
+    width: calc((8/12)*100%);
+    max-width: calc((8/12)*100%);
+}
+
+.bagi.slice7.fixed {
+    width: calc((7/12)*100%);
+    max-width: calc((7/12)*100%);
+}
+
+.bagi.slice6.fixed {
+    width: calc((6/12)*100%);
+    max-width: calc((6/12)*100%);
+}
+
+.bagi.slice5.fixed {
+    width: calc((5/12)*100%);
+    max-width: calc((5/12)*100%);
+}
+
+.bagi.slice4.fixed {
+    width: calc((4/12)*100%);
+    max-width: calc((4/12)*100%);
+}
+
+.bagi.slice3.fixed {
+    width: calc((3/12)*100%);
+    max-width: calc((3/12)*100%);
+}
+
+.bagi.slice2.fixed {
+    width: calc((2/12)*100%);
+    max-width: calc((2/12)*100%);
+}
+
+.bagi.slice1.fixed {
+    width: calc((1/12)*100%);
+    max-width: calc((1/12)*100%);
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+    .bagi.slice12 {
+        width: calc((12/12)*100%);
+        max-width: calc((12/12)*100%);
+    }
+
+    .bagi.slice11 {
+        width: calc((11/12)*100%);
+        max-width: calc((11/12)*100%);
+    }
+
+    .bagi.slice10 {
+        width: calc((10/12)*100%);
+        max-width: calc((10/12)*100%);
+    }
+
+    .bagi.slice9 {
+        width: calc((9/12)*100%);
+        max-width: calc((9/12)*100%);
+    }
+
+    .bagi.slice8 {
+        width: calc((8/12)*100%);
+        max-width: calc((8/12)*100%);
+    }
+
+    .bagi.slice7 {
+        width: calc((7/12)*100%);
+        max-width: calc((7/12)*100%);
+    }
+
+    .bagi.slice6 {
+        width: calc((6/12)*100%);
+        max-width: calc((6/12)*100%);
+    }
+
+    .bagi.slice5 {
+        width: calc((5/12)*100%);
+        max-width: calc((5/12)*100%);
+    }
+
+    .bagi.slice4 {
+        width: calc((4/12)*100%);
+        max-width: calc((4/12)*100%);
+    }
+
+    .bagi.slice3 {
+        width: calc((3/12)*100%);
+        max-width: calc((3/12)*100%);
+    }
+
+    .bagi.slice2 {
+        width: calc((2/12)*100%);
+        max-width: calc((2/12)*100%);
+    }
+
+    .bagi.slice1 {
+        width: calc((1/12)*100%);
+        max-width: calc((1/12)*100%);
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}

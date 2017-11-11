@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			padding: 40px;
+		}
+		.sidebar-kiri{
+			width: 20%;
+			background: blue;
+			float: left;
+			height: 1000px;
+		}
+		.utama{
+			width: 80%;
+			background: white;
+			float: left;
+			height: 1000px;
+		}
+		header{
+			width: 100%;
+			float: left;
+			background:blue;
+		}
+		header .content{
+			padding: 20px;
+		}
+		header .content:after{
+			content: "";
+		 	display: table;
+		 	clear: both;
+		}
+		.searchbar{
+			float: right;
+			padding: 20px;
+			/*margin-bottom: 20px;*/
+		}
+
+		.searchbar #text{
+			display: none;
+		}
+
+		.searchbar #close{
+			display: none;
+			
+		}
+		.logo{
+			float: left;
+			padding: 20px;
+		}
+		ul.menu{
+			padding: 0px;
+			margin: 0px;
+			margin-left: 50px;
+			list-style: none;
+			float: left;
+			display: block;
+		}
+
+		ul.menu li{
+			display: inline-block;
+			float: left;
+			padding: 20px;
+			margin: 0 5px;
+			font-weight: bold;
+			background: red;
+		}
+
+		ul.menu li:hover{
+			background: black;
+		}
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="content">
+			<div class="logo">CAKEPOP</div>
+			<ul class="menu">
+				<li>menu 1</li>
+				<li>menu 2</li>
+				<li>menu 3</li>
+			</ul>
+			<div class="searchbar">
+				<form action="#">
+					<button id="close" onclick="hilangkan_anu();">x</button>
+					<input type="text" name="search" id="text">
+					<!-- <input type="submit" value="cari" id="btn"> -->
+					<button onclick="tampilkan_anu();">cari</button>
+				</form>	
+			</div>
+			
+		</div>
+	</header>
+	<div class="sidebar-kiri">
+		<div class="container">
+			asdsadsa
+		</div>
+	</div>
+	<div class="utama">
+		<div class="container">
+			asdsadad
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var anu = document.getElementById('text');
+		var anu2 = document.getElementById('close');
+		function tampilkan_anu(){
+			anu.style.display = "inline";
+			anu2.style.display = "inline";
+		}
+		function hilangkan_anu(){
+			anu.style.display = "none";
+			anu2.style.display = "none";
+		}
+
+	</script>
+</body>
+</html>

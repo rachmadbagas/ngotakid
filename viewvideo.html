@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngotak.id - video</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <script src="assets/js/video.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo"><a href="index.html"><img src="assets/img/ngotakid.png" alt=""></a></div>
+            <ul>
+                <li><a href="#" onclick="tampilkan_daftar();" class="btn register">Daftar</a></li>
+                <li><a href="#" onclick="tampilkan_masuk();" class="btn login">Masuk</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="searchbar" class="clearfix">
+        <div class="container">
+            <form action="">
+                <div class="baris">
+                    <div class="bagi slice10 fixed">
+                        <input type="text" class="inputtext" placeholder="Cari Materimu Disini ...">
+                    </div>
+                    <div class="bagi slice2 fixed">
+                        <!-- <input type="submit"  value="Cari"> -->
+                        <a href="searchvideo.html" class="btn fw"><i class="fa fa-search fa-fw"></i></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="videopage">
+        <div class="container">
+            <div class="baris">
+                <div class="bagi slice8">
+                    <h3 class="viewtitle">Vuex Tutorial #1 - What is Vuex?</h3>
+                    <div class="videofield">
+                        <video id="video" poster="assets/img/thumbs.jpg" width="100%">
+                            <source src="assets/video/video.mp4" type="video/mp4"> Your browser does not support the video tag.
+                        </video>
+                        <div id="video-controls">
+                            <div class="left">
+                                <button type="button" id="play-pause"><i class="fa fa-play fa-fw"></i></button>
+                            </div>
+                            <div class="slider">
+                                <input type="range" id="seek-bar" value="0">
+                            </div>
+                            <div class="right">
+                                <button type="button" id="mute"><i class="fa fa-volume-up fa-fw"></i></button>
+                                <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+                                <button type="button" id="full-screen"><i class="fa fa-expand fa-fw"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vidDesc">
+                        <div class="vaction">
+                            <div class="left">
+                                <div class="view"><i class="fa fa-eye"></i>
+                                    <label>200 melihat ini</label>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <button id="share"><i class="fa fa-download"></i></button>
+                                <button id="share"><i class="fa fa-share"></i></button>
+                                <label for="like">50</label>
+                                <button id="like"><i class="fa fa-thumbs-up"></i></button>
+                                <label for="dislike">150</label>
+                                <button id="dislike"><i class="fa fa-thumbs-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="authorfield">
+                            <img src="assets/img/uid.png"><span>RachmadBagas</span>
+                        </div>
+                        <div class="date">Diunggah pada 20/10/2017</div>
+                        <div class="deskripsi">Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf.</div>
+                    </div>
+                    <div class="vidComment">
+                        <h3 class="ctitle">Komentar</h3>
+                        <div class="cform">
+                            <textarea name="ctext" class="inputtext" style="resize: none;height: 100px"></textarea>
+                            <button class="btn balok biru">Kirim</button>
+                        </div>
+                        <ul class="clist">
+                            <li class="citem">
+                                <span class="cnick"><a href="#">Supiah</a></span>
+                                <span class="ccomment">Apa Ini Makasudnya</span>
+                                <div class="action">
+                                    <button><i class="fa fa-reply"></i></button>
+                                    <button><i class="fa fa-thumbs-up"></i></button>
+                                    <button><i class="fa fa-thumbs-down"></i></button>
+                                </div>
+                            </li>
+                            <li class="citem">
+                                <span class="cnick"><a href="#">Damon</a></span>
+                                <span class="ccomment">Sangat Bermanfaat</span>
+                                <div class="action">
+                                    <button><i class="fa fa-reply"></i></button>
+                                    <button><i class="fa fa-thumbs-up"></i></button>
+                                    <button><i class="fa fa-thumbs-down"></i></button>
+                                </div>
+                            </li>
+                            <li class="citem">
+                                <span class="cnick"><a href="#">Goyi</a></span>
+                                <span class="ccomment">Makanan Apa ini ?</span>
+                                <div class="action">
+                                    <button><i class="fa fa-reply"></i></button>
+                                    <button><i class="fa fa-thumbs-up"></i></button>
+                                    <button><i class="fa fa-thumbs-down"></i></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bagi slice4">
+                    <div class="vidRelated">
+                        <div class="title">Materi Video Terkait</div>
+                        <div class="body">
+                            <ul>
+                                <li>
+                                    <div class="baris">
+                                        <div class="bagi slice4 fixed"><img src="assets/img/thumbs2.jpg"></div>
+                                        <div class="bagi slice8 fixed">Bootstrap Tutorial #3</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="baris">
+                                        <div class="bagi slice4 fixed"><img src="assets/img/thumbs3.jpg"></div>
+                                        <div class="bagi slice8 fixed">Python 3 Tutorial for Beginners #1</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="baris">
+                                        <div class="bagi slice4 fixed"><img src="assets/img/thumbs4.jpg"></div>
+                                        <div class="bagi slice8 fixed">React Tutorial #3</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="baris">
+                                        <div class="bagi slice4 fixed"><img src="assets/img/thumbs5.jpg"></div>
+                                        <div class="bagi slice8 fixed">Angular 2 Tutorial #1</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footerisi">
+            <div class="container">
+                <div class="baris">
+                    <div class="bagi slice6">
+                        <h4>Tentang Ngotak.id</h4>
+                        <ul class="tentang">
+                            <li><a href="#">Tentang</a></li>
+                            <li><a href="#">Bantuan</a></li>
+                            <li><a href="#">Kontak Kami</a></li>
+                        </ul>
+                    </div>
+                    <div class="bagi slice6">
+                        <h4>Follow Us</h4>
+                        <ul class="follow">
+                            <li><i class="fa fa-instagram fa-fw"></i><a href="#">@ngotakid</a></li>
+                            <li><i class="fa fa-facebook fa-fw"></i><a href="#">ngotakidacademy</a></li>
+                            <li><i class="fa fa-twitter fa-fw"></i><a href="#">@ngotakid</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <div class="container">
+                © 2017 Ngotak.id. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    <div id="black"></div>
+    <div class="popup" id="poplogin">
+        <a onclick="hilangkan_semua();" id="close">X</a>
+        <h3>Masuk</h3>
+        <form action="login">
+            <input type="text" name="username" class="inputtext single" placeholder="Username / Email">
+            <input type="password" name="password" class="inputtext single" placeholder="Password">
+            <select name="" class="dd">
+                <option value="0">Login Sebagai</option>
+                <option value="1">Tentor</option>
+                <option value="2">Murid</option>
+            </select>
+            <input type="submit" value="MASUK" class="btn ijo fw balok">
+        </form>
+    </div>
+    <div class="popup" id="popregister">
+        <a onclick="hilangkan_semua();" id="close">X</a>
+        <h3>Daftar</h3>
+        <form action="Daftar">
+            <select name="" class="dd">
+                <option value="0">Daftar Sebagai</option>
+                <option value="1">Tentor</option>
+                <option value="2">Murid</option>
+            </select>
+            <input type="text" name="nlengkap" class="inputtext single" placeholder="Nama lengkap">
+            <input type="text" name="Email" class="inputtext single" placeholder="Email">
+            <input type="text" name="nope" class="inputtext single" placeholder="Nomer HP">
+            <input type="password" name="pass" class="inputtext single" placeholder="Password">
+            <input type="password" name="confpass" class="inputtext single" placeholder="Konfirmasi password">
+            <input type="checkbox" name="check" id="check">
+            <label for="check">Saya Setuju dengan syarat dan ketentuan</label>
+            <input type="submit" value="Daftar" class="btn ijo fw balok">
+        </form>
+    </div>
+    <script type="text/javascript">
+    var pup = document.getElementById('black');
+    var anu = document.getElementById('poplogin');
+    var anu2 = document.getElementById('popregister');
+
+    function tampilkan_masuk() {
+        pup.style.display = "block";
+        anu.style.display = "block";
+    }
+
+    function tampilkan_daftar() {
+        pup.style.display = "block";
+        anu2.style.display = "block";
+    }
+
+    function hilangkan_semua() {
+        pup.style.display = "none";
+        anu.style.display = "none";
+        anu2.style.display = "none";
+    }
+    </script>
+</body>
+
+</html>

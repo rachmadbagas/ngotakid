@@ -1,0 +1,131 @@
+.videofield {
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+
+#video-controls {
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    vertical-align: text-top;
+    bottom: 0;
+    left: 0;
+    /*z-index:1;*/
+    display: table;
+}
+
+
+
+/*#video-controls .left,#video-controls .right , #video-controls .slider {
+	display: inline;
+}*/
+
+#video-controls .right {
+    display: table-cell;
+    width: 230px;
+}
+
+
+#video-controls .slider {
+    width: auto;
+    display: table-cell;
+}
+
+#video-controls .left {
+    display: table-cell;
+    width: 40px;
+}
+
+#video-controls input[type=range] {
+    /*margin-top: 10px;*/
+    display: inline;
+    width: 140px;
+    padding: 10px 10px 2px 7px;
+    background: transparent;
+    -webkit-appearance: none;
+}
+
+
+#video-controls .slider input[type=range] {
+    width: 100%;
+}
+
+#video-controls input[type=range]::-moz-range-track {
+    height: 3px;
+    background: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+#video-controls input[type=range]::-webkit-slider-runnable-track {
+    /*width: 300px;*/
+    height: 3px;
+    background: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+#video-controls input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: red;
+    margin-top: -5px;
+}
+
+#video-controls input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background: red;
+    margin-top: -5px;
+}
+
+#video-controls input[type=range]:focus {
+    outline: none;
+}
+
+#video-controls input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+#video-controls button {
+    display: inline;
+    padding: 10px;
+    background: transparent;
+    border: none;
+}
+
+#video-controls button i {
+    color: #fff;
+    transition: .3s ease-in;
+}
+
+#video-controls button:hover,
+#video-controls button:hover i {
+    cursor: pointer;
+    color: red;
+}
+
+@media (max-width: 768px) {
+    #video-controls .right {
+        display: table-cell;
+        width: 170px;
+    }
+
+    #video-controls input[type=range] {
+        display: inline;
+        width: 80px;
+        padding: 10px 10px 2px 7px;
+        background: transparent;
+        -webkit-appearance: none;
+    }
+}
